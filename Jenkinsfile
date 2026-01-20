@@ -18,7 +18,7 @@ pipeline {
         stage('Staging Environment') {
             steps {
                 echo 'Deploying to Staging Environment...'
-                sh 'firebase deploy -P fir-29310 --token "$FIREBASE_DEPLOY_TOKEN"'
+                sh 'firebase deploy -P kelowna-trails-production --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
     }
